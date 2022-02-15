@@ -48,7 +48,7 @@ for x in x_values:
             print(f"P(X≤{x}) = {cumulative_probability:.3f}")
     else:
         print(f"P(X≤{x}) = {cumulative_probability:.3f}")
-        print(f"P(X≤{x_values[-1]}) = {stats.binom.cdf(x_values[-1], n, p):.3f}")
+        print(f"P(X≤{x_values[-1]}) = {stats.binom.cdf(x_values[-1], n, p):.0f}")
         break
 
 pyplot.show()
